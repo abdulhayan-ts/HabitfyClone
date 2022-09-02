@@ -1,0 +1,317 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.nav-bar-heading {
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+#nav-bar-search {
+  padding: 0.75vh 0.8vw;
+  cursor: pointer;
+}
+
+.nav-bar-inner-text {
+  font-size: 1vw;
+  padding-left: 0.6vw;
+  padding-right: 0.4vw;
+  font-weight: 500;
+}
+
+.nav-bar-inner-text:hover {
+  cursor: pointer;
+}
+
+.nav-bar-calender {
+  padding: 0.7vh 0.8vw;
+}
+
+.nav-bar-habits-orders {
+  padding: 0.7vh 0.8vw;
+}
+
+.nav-bar-add-habits {
+  padding: 0.7vh 0.8vw;
+  background-color: #2a67f4;
+  color: #ffffff;
+}
+
+.nav-bar-add-habits:hover {
+  background-color: #1357f5;
+}
+
+.nav-bar-content {
+  cursor: pointer;
+}
+
+.nav-bar-search-bar {
+  border: none;
+  outline: none;
+  height: 80%;
+  margin: 0%;
+  width: 70%;
+  display: none;
+}
+
+.nav-bar-habits-dropdown:hover {
+  background-color: #e9ecef;
+}
+
+/* ------------------------------------------------------navbar --> drop down------------------------------------ */
+.dropdown-menu {
+  --bs-dropdown-min-width: 4rem;
+}
+
+#habits-multi-dropdowm {
+  --bs-dropdown-min-width: 10rem;
+  top: -56px;
+}
+
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu > li:hover,
+.dropdown-menu li a:hover {
+  color: white;
+  background-color: #2a67f4;
+}
+.dropdown-menu > li:hover > a {
+  color: white;
+}
+.dropdown-menu > li a {
+  padding-bottom: 0%;
+}
+
+.dropdown-menu li > a {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #9c9c9c;
+}
+
+.dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 103%;
+  top: -9px;
+}
+
+.habits-multi-dropdowm {
+  --bs-dropdown-min-width: 10rem;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
+}
+
+#habits-icons {
+  font-size: 0.8rem;
+}
+
+/* -------------------------------------------left-sidebar---------------------------- */
+
+.left-sidebar {
+  background-color: #f5f5f5;
+  padding: 2.4375rem 0.8125rem 0.75rem 0.75rem;
+  height: 100vh;
+}
+
+.user-data {
+  background-color: #ececec;
+}
+
+.user-icon {
+  font-family: Inter;
+  background-color: #78909c;
+  border-radius: 100%;
+  height: 1.625rem;
+  width: 1.625rem;
+
+  color: #f2f4f5;
+  /* font-size: 1.2vw; */
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 1.2vw;
+  /* color: #7b7c7c; */
+}
+
+.leftbar-items {
+  color: #7b7c7c;
+}
+
+.all-habits-name {
+  font-size: 1vw;
+}
+
+.all-habits-icon {
+  background-color: none;
+}
+
+.leftbar-items:hover {
+  background-color: #f0f0f2;
+  cursor: pointer;
+}
+
+.leftbar-items:hover > div > svg > path {
+  fill: rgb(0, 0, 0);
+}
+
+.leftbar-items-active,
+.leftbar-items-active:hover {
+  background-color: #2a67f4;
+  color: white;
+}
+
+.leftbar-items-active > div > svg > path,
+.leftbar-items-active:hover > div > svg > path {
+  fill: rgb(255, 255, 255);
+}
+
+.leftbar-middle-element {
+  color: #7b7c7c;
+}
+
+.leftbar-middle-items:hover {
+  cursor: pointer;
+}
+
+.leftbar-last-elements {
+  color: #7b7c7c;
+}
+
+.leftbar-areas {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------dashboard--------------------------------------- */
+.dashboard-question{
+  border-radius: 100%;
+  background-color: #e9f5fa;
+  height: 2rem;
+  width: 2rem;
+}
+
+.dashboard-card:hover{
+  background-color: #f0f0f2;
+}
+
+.dashboard-rest-card{
+  width: 94%;
+}
+
+.dashboard-done{
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 0.17rem 0em;
+}
+
+.card-title{
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.card-timings{
+  font-size: 0.7rem;
+}
+
+#card-edit-menu {
+  --bs-dropdown-min-width: 12rem;
+}
+
+/* ------------------------------------------modal----------------------------------------- */
+.form-label{
+  font-size: 0.7rem;
+}
+
+/* -----------------------------480--------------------- */
+
+@media (max-width: 480px) {
+  .nav-bar-row{
+    padding: 0.1em;
+  }
+  .user-name {
+    font-size: 0.45em;
+  }
+
+  .all-habits-name {
+    font-size: 0.3em;
+  }
+
+  .user-icon {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .leftbar-areas {
+    font-size: 0.3rem;
+  }
+
+  .card-title{
+    font-size: 0.5rem;
+  }
+  
+  .card-timings{
+    font-size: 0.4rem;
+  }
+
+  .dashboard-question{
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .dashboard-done{
+    padding: 0.05rem 0em;
+  }
+
+  .dashboard-done >span{
+    display: none;
+  }
+}
+
+/* -----------------------------768--------------------- */
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .user-name {
+    font-size: 0.6em;
+  }
+
+  .all-habits-name {
+    font-size: 0.48em;
+  }
+
+  .user-icon {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .leftbar-areas {
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+  .card-title{
+    font-size: 0.7rem;
+  }
+  
+  .card-timings{
+    font-size: 0.5rem;
+  }
+
+  .dashboard-question{
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  .dashboard-done{
+    padding: 0.08rem 0em;
+  }
+}
